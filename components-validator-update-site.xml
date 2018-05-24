@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
     <xt:extension xmlns:xt="http://www.oxygenxml.com/ns/extension"
         id="com.oxygenxml.plugin.ComponentsValidator">
-        <xt:location href="add-on/oxygen-sample-plugin-components-validator-1.0-plugin.jar"/>
+        <xt:location href="https://github.com/AdrianSorop/oxygen-plugin-components-validator-add-on/archive/master.zip"/>
         <xt:version>1.0.0</xt:version>
         <xt:oxy_version>18.0+</xt:oxy_version>
         <xt:type>plugin</xt:type>
