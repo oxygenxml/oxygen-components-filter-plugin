@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The plugin.dtd file is located in the OXYGEN_INSATALL_DIR/plugins directory -->
+<!DOCTYPE plugin SYSTEM "../plugin.dtd">
+
+<plugin
+    id="com.oxygenxml.plugin.ComponentsValidator"
+    name="Components Validator"
+    description="Allow the filtering of the editor menus, toolbars, and some other components"
+    version="1.0"
+    vendor="SyncRO"
+    class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPlugin"
+    classLoaderType="preferReferencedResources">
+    <runtime>
+        <library name="lib/oxygen-sample-plugin-components-validator-1.0.jar"/>
+    </runtime>
+  <extension type="componentsValidator" 
+    class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPluginExtension"/>
+</plugin>
