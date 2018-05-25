@@ -24,9 +24,9 @@ In this execution mode, the sample plugin logs every component validation reques
     Validate [component_type_description] ([node_path_in_filter_file]): [component]
     
 where:
-   **[component_type_description]** is the description of the validated component (for example syntax highlight marker, accelerator action or content type)
-   **[node_path_in_filter_file]** is the path of the node that can be inserted in the filter.xml file to filter the component
-   **[component]** represents the component that can be filtered
+   1. **[component_type_description]** is the description of the validated component (for example syntax highlight marker, accelerator action or content type)
+   1. **[node_path_in_filter_file]** is the path of the node that can be inserted in the filter.xml file to filter the component
+   1. **[component]** represents the component that can be filtered
 
 Example
 
