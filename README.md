@@ -3,7 +3,7 @@ This is a sample plugin which can be used to remove menu actions and toolbar but
 
 ## Installation
 
-This add-on is compatible with Oxygen XML Editor (or XML Author) version 18.1 or higher. 
+This add-on is compatible with Oxygen XML Editor (or XML Author) version 17.0 or higher. 
 
 To install it the add-on, follow these instructions:
 
@@ -14,6 +14,8 @@ To install it the add-on, follow these instructions:
 5. Restart the application.
 
 Result: 
+This type of plugin can be used to remove various toolbar and menu actions or various visual components from an Oxygen standalone installation by modifying its "filter.xml" configuration file.
+As a default behavior the plugin removes the "Grid" editing mode.
 
 Copyright and License
 ---------------------
