@@ -18,7 +18,7 @@
 		      <body>
 		        <p>This type of plugin can be used to remove various toolbar and menu actions or various visual components from an Oxygen standalone installation by modifying its "filter.xml" configuration file.
 			   As a default behavior the plugin removes the "Grid" editing mode.</p>
-			<p>More details: https://github.com/oxygenxml/oxygen-components-filter-plugin/blob/master/README.md</p>
+			<p>More details: <a href="https://github.com/oxygenxml/oxygen-components-filter-plugin/blob/master/README.md">Readme.md</a></p>
 		      </body>
 		   </html>
 		</xt:description>
