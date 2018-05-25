@@ -1,0 +1,36 @@
+<!-- This is used to install the plugin as an add-on: https://www.oxygenxml.com/doc/versions/18.1/ug-editor/topics/packing-and-deploying-addons.html#packing-and-deploying-addons -->
+<xt:extensions xmlns:xt="http://www.oxygenxml.com/ns/extension"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
+	<xt:extension xmlns:xt="http://www.oxygenxml.com/ns/extension"
+		id="com.oxygenxml.components.filter">
+		<xt:location href="https://github.com/oxygenxml/oxygen-components-filter-plugin/" />
+		<xt:version>1.0</xt:version> 
+		<xt:oxy_version>17.0+</xt:oxy_version>
+		<xt:type>plugin</xt:type>
+		<xt:author>Syncro Soft SRL</xt:author>
+		<xt:name>Components Filter</xt:name>
+		<xt:description>
+		   <html xmlns="http://www.w3.org/1999/xhtml">
+		      <head>
+		         <title>Components Filter plugin</title>
+		      </head>
+		      <body>
+		        <p>This type of plugin can be used to remove various toolbar and menu actions or various visual components from an Oxygen standalone installation by modifying its "filter.xml" configuration file.</p>
+		      </body>
+		   </html>
+		</xt:description>
+		<xt:license><![CDATA[
+		Copyright 2018 Syncro Soft SRL
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+]]></xt:license>
+	</xt:extension>
+</xt:extensions>
