@@ -15,4 +15,5 @@
     </runtime>
   <extension type="componentsValidator" 
     class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPluginExtension"/>
+    <!--property name="components.validator.run.mode" value="developer"/>-->
 </plugin>
