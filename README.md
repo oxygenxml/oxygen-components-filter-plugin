@@ -1,5 +1,5 @@
 # oxygen-components-filter-plugin
-This is a sample plugin which can be used to remove menu actions and toolbar buttons from an Oxygen standalone installation.
+This sample plugin allows customization of oXygen XML Editor components like menus, toolbars, views, and actions. For instance, you can                 use it to filter out the actions you do not use in the menus or toolbar. For more technical details see http://www.oxygenxml.com/doc/ug-oxygen/index.html?q=/doc/ug-oxygen/concepts/components-validation-plugin.html
 
 ## Installation
 
