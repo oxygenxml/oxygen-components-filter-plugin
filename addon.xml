@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
 	<xt:extension xmlns:xt="http://www.oxygenxml.com/ns/extension"
 		id="com.oxygenxml.components.filter">
-		<xt:location href="https://github.com/oxygenxml/oxygen-components-filter-plugin/" />
+		<xt:location href="https://github.com/oxygenxml/oxygen-components-filter-plugin/archive/master.zip" />
 		<xt:version>1.0</xt:version> 
 		<xt:oxy_version>17.0+</xt:oxy_version>
 		<xt:type>plugin</xt:type>
