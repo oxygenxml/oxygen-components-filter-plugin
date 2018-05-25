@@ -24,12 +24,16 @@ In this execution mode, the sample plugin logs every component validation reques
     Validate [component_type_description] ([node_path_in_filter_file]): [component]
     
 where:
-[component_type_description] is the description of the validated component (for example syntax highlight marker, accelerator action or content type)[node_path_in_filter_file] is the path of the node that can be inserted in the filter.xml file to filter the component[component] represents the component that can be filtered
+   **[component_type_description]** is the description of the validated component (for example syntax highlight marker, accelerator action or content type)
+   **[node_path_in_filter_file]** is the path of the node that can be inserted in the filter.xml file to filter the component
+   **[component]** represents the component that can be filtered
 
 Example
 
-The sample plugin logs the following line when the editor asks for Grid page validation:
-    Validate editor page (filter/editorPage/pageID): Grid
+The sample plugin logs the following line when the editor asks for **Grid** page validation:
+
+      Validate editor page (filter/editorPage/pageID): Grid
+      
 This means that if you want to filter out the Grid page you should have the following content in the filter.xml file:
 
       <filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filter.xsd">
