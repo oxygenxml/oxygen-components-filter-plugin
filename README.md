@@ -17,7 +17,10 @@ Result:
 This type of plugin can be used to remove various toolbar and menu actions or various visual components from an Oxygen standalone installation by modifying its "filter.xml" configuration file.
 As a default behavior the plugin removes the "Grid" editing mode.
 
-To find out information about the components you want to filter, set the **components.validator.run.mode** property to **developer** by uncommenting the following line in the **plugin.xml** file: **<property name="components.validator.run.mode" value="developer"/>**
+To find out information about the components you want to filter, set the **components.validator.run.mode** property to **developer** by uncommenting the following line in the **plugin.xml** file: 
+```
+<property name="components.validator.run.mode" value="developer"/>
+```
 
 In this execution mode, the sample plugin logs every component validation request by outputting in the application console messages with the following format:
 
