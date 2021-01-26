@@ -216,7 +216,7 @@ public class ComponentsValidatorPluginExtension implements ro.sync.exml.plugin.s
       @Override
       public boolean isMasterFilesSupportAvailable() {
         if (developerMode) {
-          System.out.println("Validate master files support (" + Filter.MASTER_FILES_SUPPORT + ")");
+          System.out.println("Validate main files support (" + Filter.MASTER_FILES_SUPPORT + ")");
         }
         if (filterInformation != null) {
           return !filterInformation.isMasterFilesSupportFiltered();
