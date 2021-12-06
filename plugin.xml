@@ -7,7 +7,7 @@
     name="Components Validator"
     description="Allow the filtering of the editor menus, toolbars, and some other components"
     version="1.0"
-    vendor="SyncRO"
+    vendor="Syncro Soft"
     class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPlugin"
     classLoaderType="preferReferencedResources">
     <runtime>
