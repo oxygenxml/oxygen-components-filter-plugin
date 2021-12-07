@@ -8,7 +8,7 @@
 		<xt:version>1.0.0</xt:version> 
 		<xt:oxy_version>17.0+</xt:oxy_version>
 		<xt:type>plugin</xt:type>
-		<xt:author>Syncro Soft SRL</xt:author>
+		<xt:author>Syncro Soft</xt:author>
 		<xt:name>Components Filter</xt:name>
 		<xt:description>
 		   <html xmlns="http://www.w3.org/1999/xhtml">
