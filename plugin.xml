@@ -12,7 +12,7 @@
     classLoaderType="preferReferencedResources">
     <runtime>
     	<library name="target/classes"/>
-        <library name="lib/oxygen-sample-plugin-components-validator-1.0.jar"/>
+        <library name="lib/oxygen-components-filter-plugin-1.0-plugin.jar"/>
     </runtime>
   <extension type="componentsValidator" 
     class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPluginExtension"/>
