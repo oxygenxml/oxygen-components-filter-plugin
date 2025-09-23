@@ -59,6 +59,13 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <xs:element name="perspectives">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded" minOccurs="1">
+                            <xs:element name="id" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element name="newEditorTamplates">
                     <xs:complexType>
                         <xs:sequence maxOccurs="unbounded" minOccurs="1">

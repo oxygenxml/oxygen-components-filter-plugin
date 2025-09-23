@@ -165,6 +165,10 @@ public class Filter {
   */
  static final String LIBRARIES = "libraries";
  /**
+  * Perspectives element name
+  */
+ static final String PERSPECTIVES = "perspectives";
+ /**
   * Library element name
   */
  static final String LIBRARY = "library";
@@ -176,6 +180,16 @@ public class Filter {
    * Toolbars composite
   */
   static final String TOOLBARS_COMPOSITE = "composite";
+
+  /**
+   * Perspective ID
+   */
+  public static final String ID = "id";
+
+  /**
+   * The perspectives list
+   */
+  private List<String> perspectives;
 
 
  /**
@@ -430,5 +444,25 @@ public class Filter {
    */
   public List<String> getToolbarsComposites() {
     return toolbarsComposites;
+  }
+
+  /**
+   * Check if the perspective is filtered
+   * @param perspID The perspective ID
+   * @return <code>true</code> if it is filtered
+   */
+  public boolean isPerspectiveFiltered(String perspID) {
+    if(perspectives != null && perspectives.contains(perspID)) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Set perspectives
+   * @param perspectives Perspectives
+   */
+  public void setPerspectives(List<String> perspectives) {
+    this.perspectives = perspectives;
   }
 }

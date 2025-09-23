@@ -11,6 +11,7 @@
     class="com.oxygenxml.sdksamples.componentsvalidator.ComponentsValidatorPlugin"
     classLoaderType="preferReferencedResources">
     <runtime>
+    	<library name="target/classes"/>
         <library name="lib/oxygen-sample-plugin-components-validator-1.0.jar"/>
     </runtime>
   <extension type="componentsValidator" 

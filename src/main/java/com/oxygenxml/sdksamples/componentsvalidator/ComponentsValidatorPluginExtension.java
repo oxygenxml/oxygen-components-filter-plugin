@@ -190,10 +190,20 @@ public class ComponentsValidatorPluginExtension implements ro.sync.exml.plugin.s
       @Override
       public boolean isDebuggerPerspectiveAllowed() {
         if (developerMode) {
-          System.out.println("Validate debugger perspetive (" + Filter.DEBUGGER_PERSPECTIVE + ")");
+          System.out.println("Validate debugger perspective (" + Filter.DEBUGGER_PERSPECTIVE + ")");
         }
         if (filterInformation != null) {
           return !filterInformation.isDebuggerPerspectiveFiltered();
+        }
+        return true;
+      }
+      @Override
+      public boolean isPerspectiveAllowed(String perspID) {
+        if (developerMode) {
+          System.out.println("Validate perspective (" + perspID + ")");
+        }
+        if (filterInformation != null) {
+          return !filterInformation.isPerspectiveFiltered(perspID);
         }
         return true;
       }
@@ -283,6 +293,7 @@ public class ComponentsValidatorPluginExtension implements ro.sync.exml.plugin.s
         List<String> optionPanes = null;
         List<String> options = null;
         List<String> libraries = null;
+        List<String> perspectives = null;
         List<String> newEditorTamplates = null;
         List<String> toolbarsComposites = null;
         boolean debuggerPerspectiveFiltered = false;
@@ -378,7 +389,13 @@ public class ComponentsValidatorPluginExtension implements ro.sync.exml.plugin.s
               } else if (currentChildElement.getLocalName().equals(Filter.MASTER_FILES_SUPPORT)) {
                 // Master files support
                 masterFilesSupportFiltered = true;
-              }
+              } else if (currentChildElement.getLocalName().equals(Filter.PERSPECTIVES)) {
+                // Libraries
+                if (perspectives == null) {
+                  perspectives = new ArrayList<String>();
+                }
+                populateListWithElementChildContent(perspectives, currentChildElement, Filter.ID);
+              } 
             }
             // Move to next sibling
             currentChild = currentChild.getNextSibling();
@@ -392,6 +409,7 @@ public class ComponentsValidatorPluginExtension implements ro.sync.exml.plugin.s
           filterInformation.setDebuggerPerspectiveFiltered(debuggerPerspectiveFiltered);
           filterInformation.setEditorPages(editorPages);
           filterInformation.setLibraries(libraries);
+          filterInformation.setPerspectives(perspectives);
           filterInformation.setMasterFilesSupportFiltered(masterFilesSupportFiltered);
           filterInformation.setMenuOrTaggedActions(menuOrTaggedActions);
           filterInformation.setNewEditorTamplates(newEditorTamplates);
